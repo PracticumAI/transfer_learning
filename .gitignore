@@ -1,6 +1,8 @@
 # The code in notebooks makes these folders
 data/
 models/
+logs/
+lightning_logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

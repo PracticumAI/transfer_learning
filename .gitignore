@@ -4,6 +4,7 @@ models/
 logs/
 lightning_logs/
 checkpoints/
+agrinet_logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

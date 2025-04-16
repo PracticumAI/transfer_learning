@@ -630,3 +630,18 @@ def run_inference_on_text(text, lora_model, feature_model, tokenizer, device, id
     }
 
 
+def get_target_modules_for_model(model_name):
+    """Return appropriate target modules based on the model architecture."""
+    if "distilbert" in model_name:
+        return ["q_lin", "k_lin", "v_lin"]
+    elif "bert" in model_name:
+        return ["query", "key", "value"]
+    elif "roberta" in model_name:
+        return ["query", "key", "value"]
+    elif "gpt" in model_name:
+        return ["q_proj", "k_proj", "v_proj"]
+    elif "t5" in model_name:
+        return ["q", "k", "v"]
+    else:
+        # Default to the most common pattern
+        return ["query", "key", "value"]

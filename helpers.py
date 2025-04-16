@@ -64,7 +64,7 @@ def download_and_extract_data(download_url, file_name, dest_path, folder_names=N
     print(f"Extracting the data file {file_name}, this may take a few minutes.")
     if file_name.endswith('.tar.gz'):
         with tarfile.open(os.path.join(dest_path, file_name), "r:gz") as tar:
-            tar.extractall(path=ddest_path, filter="data")
+            tar.extractall(path=dest_path, filter="data")
     elif file_name.endswith('.zip'):
         with zipfile.ZipFile(os.path.join(dest_path, file_name), 'r') as zip_ref:
             zip_ref.extractall(dest_path)

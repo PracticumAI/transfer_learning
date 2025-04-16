@@ -1,4 +1,4 @@
-name: transfer_learning2
+name: transfer_learning
 channels:
   - conda-forge
   - bioconda
@@ -321,4 +321,4 @@ dependencies:
       - werkzeug==3.1.3
       - xxhash==3.5.0
       - yarl==1.19.0
-prefix: /lustre/fs0/bsc4892/share/conda/envs/transfer_learning2
+prefix: 

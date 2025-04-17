@@ -9,7 +9,7 @@ import os
 import pandas as pd
 import random
 import requests
-from sklearn.metrics import (ConfusionMatrixDisplay, accuracy_score,
+from sklearn.metrics import (confusion_matrix, ConfusionMatrixDisplay, accuracy_score,
                            precision_recall_fscore_support, roc_auc_score)
 import tarfile
 import time

@@ -1,17 +1,24 @@
-### Workshop Learning Objectives (*Transfer Learning*)
+# Practicum AI: Transfer Learning
 
-1. Operationally define transfer learning.
-2. Describe the purpose of transfer learning.
-3. Discuss the advantages of transfer learning.
-4. Discuss the three key questions to ask related to transfer learning.
-5. Discuss the different types of transfer learning.
-6. Discuss how layers (deep learning) can be cut or switched in terms of transfer learning.
-7. Implement classification with transfer learning.
-8. Discuss VGG16 model and ImageNet.
-9. Describe how a new deep neural network (DNN) could be done by reusing layers.
-10. Discuss what is Hugging Face.
-11. Implement fine tuning with transfer learning.
-12. Discuss the importance of freezing and fine-tuning certain layers.
+![Practicum AI Logo image](https://github.com/PracticumAI/practicumai.github.io/blob/main/images/logo/PracticumAI_logo_500x100.png?raw=true) <img src='images/practicumai_transfer_learning.png' align='right' alt='Practicum AI: Transfer Learning course logo' width=100>
 
-***
-See *Deep Learning for Coders with fastai and Pytorch*, page 31-ff for discussion of pretrained models, transfer learning, and the absence of content on this subject.
+
+# Transfer Learning
+
+
+This workshop provides the foundational concepts and practical applications of transfer learning, a powerful technique in deep learning that allows AI models to leverage pre-trained knowledge to improve performance on new tasks. The sessions will cover different types of transfer learning techniques, such as feature extraction and fine-tuning. This includes hands-on experience in applying these techniques to computer vision and language models.  
+
+## Workshop Learning Objectives Objectives – 
+
+**By the end of this workshop, participants will be able to:**
+1.	Define transfer learning and explain its advantages in deep learning.
+2.	Differentiate between various transfer learning techniques, including domain adaptation  , feature extraction, fine-tuning, and LoRA.
+3.	Implement transfer learning in computer vision and LLMs using Python and Jupyter Notebooks.
+4.	Evaluate the effectiveness of transfer learning models compared to other training regimes such as pre-training on a limited dataset.
+5.	Troubleshoot common challenges in transfer learning, such as catastrophic forgetting and negative transfer.
+
+## Modules
+
+* **Module 1: Transfer Learning Concepts:** In Module 1, we will dig into the foundational concepts of transfer learning, explore its benefits, and examine its applications across different domains. By the end, you'll be ready to articulate key principles, differentiate between various strategies, and understand the basics of leveraging pre-trained models effectively.
+* **Module 2: Implementing Transfer Learning:** This module focuses on the practical implementation of transfer learning techniques. Unlike the previous module, which explored the 'why' and ‘what’ behind transfer learning, this module is dedicated to the 'how'—demonstrating key methodologies for achieving learning transfer such as feature extraction, fine-tuning, and Low-Rank Adaptation (LoRA). In the Hands-on portion of this module, we will leverage a model’s pre-trained capabilities to explore different transfer learning strategies, modifying and optimizing its behavior for new tasks. 
+* **Module 3: Evaluating and Optimizing Transfer Learning** Choosing the right pre-trained model is one of the most critical steps in transfer learning. The effectiveness of transfer learning depends on the compatibility between the pre-trained model (source model) and the new task (target task)   . It’s important to note here that we mean compatibility both in the task the architecture was meant to support and in the data the source model was trained on versus the target data. A well-chosen source model can significantly reduce training time, lower computational costs, and improve model accuracy—but a poorly chosen one can lead to negative transfer, where the transferred knowledge actually hurts performance.
